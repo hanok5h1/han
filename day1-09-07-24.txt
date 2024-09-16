@@ -1,0 +1,396 @@
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                                                                  DAY-1(09-07-2024)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1.Write a program to calculate the integer value A raise to the power of integer value B without using ** and build in method. 
+Example: A=4 b=3 Res=64
+a=int(input())
+b=int(input())
+c=1
+pres=1
+while c<=b:
+    pres*=a
+    c+=1
+print(pres)
+-------------------------------------
+range()-syntax:
+-----------------
+range(startv,endv,stepv)
+
+a=int(input())
+b=int(input())
+pres=1
+for i in range(1,b+1,1):
+    pres*=a
+print(pres)
+------------
+a=int(input())
+b=int(input())
+pres=1
+for i in range(b,0,-1):
+    pres*=a
+print(pres)
+  
+a=int(input())
+b=int(input())
+pres=1
+while b>=1:
+    pres*=a
+    b-=1
+    print(pres)
+    
+Data representation:Low to High :<,>=
+Data representation:High to Low :>,>=
+
+map()-syntax
+-------------------------------
+map()maps second parameter data to first parameter
+map(function,iterables)
+
+syntax of spilt()
+----------------------------------------
+opeation:separates the input data readed with the given character
+defaiult character is space
+
+a,b=map(int,input().split())
+pres=1
+while b>=1:
+    pres*=a
+    b-=1
+    print(pres)
+------------------------------------------------------
+#factorial:
+
+n=int(input())
+for i in range(1,n):
+    n*=i
+    print(n)
+
+n=int(input())
+fa=1
+for i in range(n,1,-1):
+    fa*=i
+    print(fa)
+    
+    
+    
+------------------------------
+    
+Hackerank prgm qustion:
+-----------------------------------------------------------------------
+1.Flippin bits
+2.Maximum draws
+3.Hand shake
+4.Diwali lights
+5.Halloween party
+6.Cutting the paper squares
+7.Extra Long Factorial
+8.Minimum height triangle
+9.Army Game
+10.Save the prisoner!
+11.Restaurant
+12.DIE HARD3
+------------------------------------------------------------------------
+Write a program to covert the given decimal number to binary
+Example:n=10 output:1010
+
+n=int(input())
+a=bin(n)
+print(a)
+--------------------   
+n=int(input())
+a=bin(n)
+print(a[2:])
+----------------------------------------------------------------------------
+Write a program to covert the binary number to decimal?     
+Ex:1010 output:10
+
+n=input()
+x=int(n,2)
+print(x)
+
+----------------------------------------------------------------------------------
+Write a program to convert decimal to octal?
+Ex:26 output:32
+
+n=int(input())
+x=oct(n)
+print(x[2:])
+
+
+Write a program to convert octal to decimal?
+ex:32 output:26
+
+n=input()
+x=int(n,8)
+print(x)
+-----------------------------------------------------------------------------------------------
+Write a program to convert decimal number to hexadecimal?
+ex:36 output:24
+
+n=int(input())
+x=hex(n)
+print(x[2:])
+-----------------------------------------------------------------------
+Write a progaram to convert the given hexadecimal data to decimal?
+ex:24 output:36
+
+n=input()
+x=int(n,16)
+print(x)
+----------------------------------------------------------
+Sweet17 tcs qustion:
+#Given a maximum of four digit to the base 17 (10 – A, 11 – B, 12 – C, 13 – D … 16 – G} as input,
+output its decimal value.
+Case:1
+Input – 1A
+Expected Output – 27
+
+Case 2
+Input – 23GF
+Expected Output – 10980
+
+n=input()
+x=int(n,17)
+print(x)
+----------------------------------------------------
+VALUES TO REPRESENT:0,1,2,3 N=4
+IV=-1
+------------------------------------------------
+prisoner:
+n,m,s=map(int,input().split())
+c=1
+while c<=m:
+-----------------------------------------------
+Write a program to find the GCD of the given two numbers?
+Ex:a=5 b=2 Output:1
+
+-------------------------------
+write a program to find the LCM of the given two numbers?
+
+Ex:a=5 b=2 Output:10
+
+import math 
+a,b=map(int,input().split())
+x=math.lcm(a,b)
+print(x)
+
+import math 
+a,b=map(int,input().split())
+x=math.lcm(a,b)
+print(x)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                                                                 #DAY-2-[11-07-2024]
+--------------------------------------------------------------------------------------------------------------------------------
+1.write a program to find the LCM of the given two numbers?
+
+Ex:a=5 b=2 Output:10
+
+import math 
+a,b=map(int,input().split())
+x=math.lcm(a,b)
+print(x)
+
+import math 
+a,b=map(int,input().split())
+x=math.lcm(a,b)
+print(x)
+------------------------------------------------------------------------
+HackerRanck:
+15.DRAWING BOOK:
+
+fc=p//2
+    bc=n//2-p//2
+    if fc<bc:
+        return fc
+    else:
+        return bc
+16.CATS AND MOUSE:
+17.Taum and Bdy:
+
+if abs(bc-wc)<=z:
+        return b*bc+w*wc
+    elif bc>wc:
+        return w*wc+b*(z+wc)
+    else:
+        return b*bc+w*(z+bc)
+
+18.Library Fine:
+
+if y1<y2:
+        return 0
+    if y1!=y2:
+        return 10000
+    else:
+        if m1<m2:
+            return 0
+        if m1!=m2:
+            return 500*abs(m1-m2)
+        else:
+            if d1<d2:
+                return 0
+            else:
+                return 15*abs(d2-d1)
+
+20.Day 5: Loops:
+21.Connecting towns:
+22.Find Digits:
+23.Utopian Tree
+24.Number Line Jumps:
+
+flag=0#not matched
+    for i in range(1,10001,1):
+        x1+=v1
+        x2+=v2
+        if x1==x2:
+            flag=1#matched
+            brake
+        if falg==1:
+            return "YES"
+        else:
+            return "NO"
+
+25.SUM VS XOR:
+
+4+0=4-ADDITION RESULT
+4=100
+0=000
+-------
+   100-XOR RESULT
+
+26.Is Fibo:
+
+-------------------------------------------------------------------------------
+13.Python course:IF=ELSE
+ 
+2.Write a program to verify wheather the given number is even or odd
+without using arithmetic operator.
+
+n=int(input())
+if n&1==0:
+    print('even')
+else:
+    print('odd')
+-----------------------------------------------------------------------------
+14.PYTHON COURSE:WRITE A FUNCTION:
+
+year=int(input())
+if year%100==0:
+    if year%400==0:
+        print('yes')
+    else:
+        print('no')
+else:
+    if year%4==0:
+        print('yes')
+    else:
+        print('no')   
+-----
+19.PYTHON COURSE:Loops
+
+n = int(input())
+    for i in range(0,n,1):
+        print(i*i)
+        
+ 
+----------------------------------------------------------------------------------
+3.milk man and his bottles tcs.com:
+ 
+n=int(input())
+flag=0
+c=0
+if n==1 or n==5 or n==7 or n==10:
+    ans=1
+    flag=1
+else:
+    rem=n
+if n>=10:
+    c=c+n//10
+    rem=n%10
+if rem>=7:
+    c=c+rem//7
+    rem=rem%7
+if rem>=5:
+    c=c+rem//5
+    rem=rem%5
+if rem<5 and rem>1:
+    c=c+rem
+if flag==0:
+    print(c)
+else:
+    print(ans)
+-----------------------------------------------------------------------------------------------------------------------    
+4.Write a program to generate a fibonacci series of length n
+where n is positve number greater than two(2)
+ 
+Example:
+----------
+n=5
+
+output:
+-------
+0 1 1 2 3
+
+Solution:
+----------
+n=int(input())
+a=0
+b=1
+print(a)
+print(b)
+counter=n-2;
+while counter>0:
+    c=a+b
+    print(a,b,c)
+    a=b
+    b=c
+    counter-=1
+
+------------------------------
+Web Site:Python
+
+import sympy
+x=[sympy.fibonacci(i)for i in range(5)]
+print(x)
+---------------------------------------------------------
+Write a program to generate a fibbonacci series of length n
+where n is positve number greater than three(3)
+
+Example:
+----------
+n=6
+
+output: 
+-------
+6
+0
+1
+0 1 1 2
+1 1 2 4
+1 2 4 7
+
+n=int(input())
+a=0
+b=1
+c=1
+print(a)
+print(b)
+counter=n-3;
+while counter>0:
+    d=a+b+c
+    print(a,b,c,d)
+    a=b
+    b=c
+    c=d
+    counter-=1
+------------------------------------------
+import sympy
+x=[sympy.tribonacci(i)for i in range(5)]
+print(x)
+[0, 1,  1,  2,  4]
+
+-------------------------------------------
+write a program to verify whether the given number is prime or not?
+
+
